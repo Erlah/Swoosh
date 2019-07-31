@@ -15,16 +15,18 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" android:scaleType="centerCrop"
-            app:layout_constraintHorizontal_bias="1.0" app:layout_constraintVertical_bias="1.0"/>
+            app:layout_constraintHorizontal_bias="1.0" app:layout_constraintVertical_bias="1.0"
+            android:contentDescription="@string/background_image"/>
     <ImageView
             android:src="@drawable/swooshlogo"
             android:layout_width="88dp"
             android:layout_height="29dp"
             android:id="@+id/imageView2" android:scaleType="fitCenter" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="8dp" android:layout_marginTop="24dp" app:layout_constraintTop_toTopOf="parent"/>
+            android:layout_marginStart="8dp" android:layout_marginTop="24dp" app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/logo_image"/>
     <TextView
-            android:text="GO ALL IN"
+            android:text="@string/go_all_in"
             android:layout_width="228dp"
             android:layout_height="60dp"
             android:id="@+id/textView" android:textColor="@android:color/white"
@@ -33,7 +35,7 @@
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
             app:layout_constraintStart_toStartOf="parent"/>
     <TextView
-            android:text="ON GOING ALL OUT"
+            android:text="@string/on_going_all_out"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textView2" android:fontFamily="@font/montserrat"
@@ -42,7 +44,7 @@
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
             app:layout_constraintStart_toStartOf="parent"/>
     <TextView
-            android:text="Find team in your city, and dominate the league"
+            android:text="@string/find_team_in_your_city_and_dominate_the_league"
             android:layout_width="211dp"
             android:layout_height="39dp"
             android:id="@+id/textView3" android:textColor="@android:color/white"
@@ -52,12 +54,12 @@
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
             app:layout_constraintStart_toStartOf="parent"/>
     <Button
-            android:text="Button"
+            android:text="@string/get_started"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/button" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            android:id="@+id/getStrartedBtn" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="@+id/imageView" android:fontFamily="@font/montserrat"
-            tools:text="GET STARTED" android:textSize="18sp" android:textStyle="bold"
+            android:textSize="18sp" android:textStyle="bold"
             android:textColor="@android:color/white" android:background="@drawable/swosh_button"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
