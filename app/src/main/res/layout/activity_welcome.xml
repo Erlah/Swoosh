@@ -42,7 +42,7 @@
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
             app:layout_constraintStart_toStartOf="parent"/>
     <TextView
-            android:text="Find team in your city & dominate the league"
+            android:text="Find team in your city, and dominate the league"
             android:layout_width="211dp"
             android:layout_height="39dp"
             android:id="@+id/textView3" android:textColor="@android:color/white"
