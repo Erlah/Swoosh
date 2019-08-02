@@ -1,4 +1,4 @@
-package com.tehnovek.swoosh
+package com.tehnovek.swoosh.controller
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
