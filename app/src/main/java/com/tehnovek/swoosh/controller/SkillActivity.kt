@@ -22,6 +22,16 @@ class SkillActivity : BaseActivity() {
         player.skill = "baller"
     }
 
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putParcelable(EXTRA_PLAYER, player)
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+        super.onRestoreInstanceState(savedInstanceState)
+        if (savedInstanceState != null) player= savedInstanceState.getParcelable(EXTRA_PLAYER)?: Player("","")
+    }
+
     fun onFinishClicked(view: View) {
         if (!player.skill.isEmpty()) {
             val finishActivity = Intent(this, FinishActivity::class.java)
